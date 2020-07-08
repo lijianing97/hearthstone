@@ -3,12 +3,12 @@ package com.lijianing.hearthstone.entity;
 /**
  * @author lijianing
  * @version 1.0
- * @date 2020/7/8 21:13
+ * @date 2020/7/8 21:31
  */
 
-public class User {
+public class AdminUser {
     private int id;
-    private String userName;
+    private String adminName;
     private String password;
 
     public int getId() {
@@ -19,12 +19,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getAdminName() {
+        return adminName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setAdminName(String adminName) {
+        this.adminName = adminName;
     }
 
     public String getPassword() {
@@ -37,9 +37,9 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "AdminUser{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", adminName='" + adminName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
